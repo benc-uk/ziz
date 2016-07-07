@@ -1,0 +1,725 @@
+/*
+ * Copyright (C) Ben Coleman. All rights reserved.
+ *
+ * This software is published under the terms of the Apache Software
+ * License version 2.0, a copy of which has been included with this
+ * distribution in the LICENSE.txt file.  */
+
+package com.bencoleman.ziz.web;
+
+import com.bencoleman.ziz.*;
+import com.bencoleman.ziz.utils.PasswordEncoder;
+import java.io.*;
+import javax.servlet.ServletException;
+import javax.servlet.http.*;
+import jofc2.model.elements.LineChart.*;
+import org.eclipse.jetty.server.*;
+import org.eclipse.jetty.server.handler.*;
+/**
+ *
+ * @author Ben Coleman
+ */
+public class WebServer extends AbstractHandler implements Runnable
+{
+    private Thread thread;
+    private int port;
+    //private int size = 2;
+    private boolean admin_secure = false;
+    private WebReport report;
+
+    /**
+     *
+     * @param listen_port
+     */
+    public WebServer(int listen_port)
+    {
+        port = listen_port;
+        thread = new Thread(this, "Ziz Webserver");
+
+        admin_secure = Main.config.containsKey("web_admin_user");
+
+        thread.start();
+    }
+
+    /**
+     *
+     * @param target
+     * @param base_req
+     * @param request
+     * @param response
+     * @throws IOException
+     * @throws ServletException
+     */
+    public void handle(String target, Request base_req, HttpServletRequest request, HttpServletResponse response) throws IOException
+    {
+        /*String set_size = request.getParameter("size");
+        if(set_size != null && set_size.length() > 0) {
+            this.size = Integer.parseInt(set_size);
+        }*/
+
+        if(target.startsWith("/admin")) {
+            base_req.setHandled(true);
+
+            // handle security for admin page
+            if(admin_secure) {
+                String auth = request.getHeader("Authorization");
+                if(auth == null) {
+                    response.addHeader("WWW-Authenticate", "Basic realm=\"Ziz Admin\"");
+                    response.sendError(401);
+                    return;
+                } else {
+                    String decoded = com.bencoleman.ziz.utils.Base64Coder.decodeString(auth.substring(6));
+                    String[] parts = decoded.split(":");
+                    String user = Main.config.getStr("web_admin_user");
+                    String pass = Main.config.getPassword("web_admin_password");
+                    if(!(parts[0].equals(user) && parts[1].equals(pass))) {
+                        response.addHeader("WWW-Authenticate", "Basic realm=\"Ziz Admin\"");
+                        response.sendError(401);
+                        return;
+                    }
+                }
+            }
+
+            String action = request.getParameter("action");
+
+            if(action == null) {
+                //renderPage(response, "Debug", -1, false, "");
+                new AdminPage(target, request, response).render();
+            } else {
+                if(action.equalsIgnoreCase("force")) {
+                    int mon = Integer.parseInt(request.getParameter("monitor"));
+                    Main.runner.getMonitorById(mon).forceRun();
+                    response.sendRedirect("/admin");
+                }
+                if(action.equalsIgnoreCase("alert")) {
+                    int mon = Integer.parseInt(request.getParameter("monitor"));
+                    Main.runner.getMonitorById(mon).forceAlert();
+                    response.sendRedirect("/admin");
+                }
+                if(action.equalsIgnoreCase("reload")) {
+                    Main.runner.readMonitors();
+                    response.sendRedirect("/admin");
+                }
+                if(action.equalsIgnoreCase("edit")) {
+                    //renderPage(response, "Edit Config", -1, false, "<script src='/js/codemirror/codemirror.js' type='text/javascript'></script>\n<script src='/js/editor.js' type='text/javascript'></script>");
+                    new EditorPage(target, request, response).render();
+                }
+                if(action.startsWith("save")) {
+                    try {
+                        String xml = request.getParameter("xml");
+                        FileWriter out = new FileWriter(Main.CONF_DIR+Main.MONITOR_FILE);
+                        out.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<monitors>\n"+xml+"\n</monitors>");
+                        out.flush();
+                        out.close();
+                        if(action.endsWith("reload")) {
+                            Main.runner.readMonitors();
+                        }
+                        response.sendRedirect("/admin?action=edit");
+                    } catch (IOException ioe) {
+                        Main.log.error("Failed to save monitor config file, monitors.xml - "+ioe.getMessage());
+                    }
+                }
+            }
+            return;
+        }
+
+        if(target.startsWith("/encrypt")) {
+            base_req.setHandled(true);
+            String pass = request.getParameter("password");
+            String en_pass = PasswordEncoder.encrypt(pass);
+            response.getWriter().println(en_pass);
+            return;
+        }
+
+        if(target.startsWith("/report")) {
+            base_req.setHandled(true);
+            //pageReport(response.getWriter());
+            new ReportPage(target, request, response).render();
+            return;
+        }
+
+        if(target.startsWith("/show_report")) {
+            base_req.setHandled(true);
+            String[] parts = target.split("/");
+            String mon_str = request.getParameter("monitor");
+            String start = request.getParameter("start");
+            String end = request.getParameter("end");
+            int max = Integer.parseInt(request.getParameter("max"));
+            String zero_check = request.getParameter("zero");
+            boolean zero = false;
+            if(zero_check != null)
+                zero = true;
+            String dates_check = request.getParameter("dates");
+            boolean dates_on = false;
+            if(dates_check != null)
+                dates_on = true;
+            //Monitor m = Main.runner.getMonitorById(mon_id);
+
+            try {
+                report = new WebReport(mon_str, start, end, max, zero, dates_on);
+                report.display(response);
+            } catch(Exception ex) {
+                ex.printStackTrace();
+            }
+            return;
+        }
+
+        if(target.startsWith("/rep_data_chart")) {
+            base_req.setHandled(true);
+            response.getWriter().print(report.getDataChart());
+            return;
+        }
+
+        if(target.startsWith("/rep_status_chart")) {
+            base_req.setHandled(true);
+            response.getWriter().print(report.getStatusChart());
+            return;
+        }
+
+        if(target.startsWith("/rep_pie_chart")) {
+            base_req.setHandled(true);
+            response.getWriter().print(report.getPieChart());
+            return;
+        }
+
+        /*if(target.startsWith("/dash")) {
+            base_req.setHandled(true);
+            String[] parts = target.split("/");
+
+            int group_id = -1;
+            if(parts.length > 2)
+                group_id = Integer.parseInt(parts[2]);
+
+            renderPage(response, "Dashboard", group_id, true, "");
+            return;
+        }*/
+
+        if(target.startsWith("/dash")) {
+            base_req.setHandled(true);
+            new DashboardPage(target, request, response).render();
+            return;
+        }
+
+        /*if(target.startsWith("/chart_data")) {
+            String[] parts = target.split("/");
+            int mon_id = Integer.parseInt(parts[2]);
+            base_req.setHandled(true);
+            chartData(response, mon_id);
+            return;
+        }*/
+
+        /*if(target.startsWith("/ofc_data")) {
+            base_req.setHandled(true);
+            new GraphPage(target, request, response).renderOFCData();
+            return;
+        }*/
+        
+        if(target.startsWith("/graph")) {
+            base_req.setHandled(true);
+            String data = request.getParameter("data");
+            if(data != null) {
+                new GraphPage(target, request, response).renderOFCData();
+            } else {
+                new GraphPage(target, request, response).render();
+            }
+            return;
+        }
+
+
+
+        if(target.startsWith("/history")) {
+            /*String[] parts = target.split("/");
+            int mon_id = Integer.parseInt(parts[2]);
+            base_req.setHandled(true);
+            renderPage(response, "Monitor History", mon_id, true, "");
+            return;*/
+            base_req.setHandled(true);
+            new HistoryPage(target, request, response).render();
+            return;
+        }
+
+        base_req.setHandled(false);
+    }
+
+    /**
+     *
+     */
+    public void run()
+    {
+        try {
+            org.eclipse.jetty.server.Server server = new org.eclipse.jetty.server.Server(port);
+
+            ResourceHandler resource_handler = new ResourceHandler();       
+            resource_handler.setDirectoriesListed(true);
+            resource_handler.setWelcomeFiles(new String[]{ "index.html" });
+            resource_handler.setResourceBase("web");
+
+            HandlerList handlers = new HandlerList();
+            handlers.setHandlers(new Handler[] { this, resource_handler });
+            server.setHandler(handlers);
+
+            Main.log.info("Starting webserver, listening on port "+port);
+            server.start();
+            server.join();
+        } catch (Exception ex) {
+            //ex.printStackTrace();
+            Main.log.fatal("Error starting webserver on port "+port+": "+ex+" "+ex.getMessage());
+        }
+    }
+
+    /**
+     *
+     * @param response
+     * @param page
+     * @param extra
+     */
+    /*public void renderPage(HttpServletResponse response, String page, int id, boolean refresh, String head_extra)
+    {
+        response.setContentType("text/html;charset=utf-8");
+        response.setStatus(HttpServletResponse.SC_OK);
+
+        java.io.PrintWriter out = null;
+        try {
+            out = response.getWriter();
+        } catch (IOException ex) {
+            Main.log.error(ex);
+        }
+
+        String refresh_head = "";
+        if(refresh) {
+            int ref_interval = Main.config.getInt("dash_refresh");
+            refresh_head = "<meta http-equiv='refresh' content='"+ref_interval+"'/>\n";
+        }
+        out.println("<html><head><title>Ziz - "+page+"</title>\n" +
+                refresh_head +
+                "<link href='/css/main.css' rel='stylesheet' type='text/css'>\n" +
+                "<script src='/js/main.js' type='text/javascript'></script>\n" +
+                head_extra +
+                "</head><body>\n\n");
+
+        if(page.equalsIgnoreCase("Dashboard")) {
+            Group grp = Main.runner.getGroupById(id);
+            pageDashboard(out, grp, this.size);
+        }
+        //if(page.equalsIgnoreCase("Monitor History")) pageHistory(out, id);
+        //if(page.equalsIgnoreCase("Debug")) pageDebug(out);
+        //if(page.equalsIgnoreCase("Edit Config")) pageEdit(out);
+        //if(page.equalsIgnoreCase("Generate Report")) pageReport(out);
+        
+        out.println("\n\n</body></html>");
+
+    }*/
+
+    /**
+     *
+     * @param wr
+     * @param group
+     * @param size
+     */
+    /*public void pageDashboard(PrintWriter out, Group group, int size)
+    {
+        try {
+            String font_size = "1.0";
+            if(size == 1) font_size = "0.8";
+            if(size == 3) font_size = "1.8";
+            
+            out.println("<div id='message' style='text-align:center; color: red'></div>" +
+                    "<table align='center' style='font-size:"+font_size+"em'>\n");
+
+            Vector<Monitor> monitor_collection;
+
+            // at root level so, loop and show groups
+            if(group == null) {
+                for (Group g : Main.runner.getGroups()) {
+                    String link = "<a href='/dash/"+g.getId()+"'>";
+                    out.println("<tr><td>"+link+"<img src='/img/"+size+"/"+g.getStatus()+".png'/></a></td><td>"+link+"<b>[" + g.getName() + "]</b></a></td><td>"+link+"&nbsp;</a></td><td>"+link+g.getMessage()+"</a></td></tr>\n");
+
+                    if(Main.config.getBool("web_notifications")) {
+                        if(g.getPrevStatus() != g.getStatus() && g.getStatus() < Result.STATUS_GOOD) {
+                            out.println("<script>showNotification("+g.getCauser().getLastResult().dt.getTime()+", "+g.getStatus()+", \""+g.getName()+"\", \""+g.getMessage()+"\");</script>");
+                        }
+                    }
+                }
+                monitor_collection = Main.runner.getMonitors();
+            } else {
+                monitor_collection = group.getMonitors();
+                out.println("<tr><td colspan='4' align='center'><a href='/dash'><img src='/img/undo.png' align='absmiddle'/>&nbsp;&nbsp;<i>Back Up</i></a></td></tr>\n");
+            }
+
+            for (Monitor m : monitor_collection) {
+                if(m.getParentGroup() != group) {
+                    // this monitor isn't in the group we want - ignore
+                    continue;
+                }
+
+                int status_code = -1;
+                String msg = "";
+                String val_str = "";
+
+                Result r = m.getLastResult();
+                if(r == null) {
+                    val_str = "n/a";
+                    msg = "Monitor hasn't run yet";
+                } else {
+                    status_code = r.status;
+                    if(Main.config.getBool("web_notifications")) {
+                        if(m.getResults().size() > 1 && status_code < Result.STATUS_GOOD && m.getResults().get(m.getResults().size()-2).status >= Result.STATUS_GOOD) {
+                            out.println("<script>showNotification("+r.dt.getTime()+", "+status_code+", \""+m.getName()+"\", \""+r.msg+"\");</script>");
+                        }
+                    }
+                    msg = r.msg;
+                    double value = r.value;
+                    if(Double.isNaN(value)) {
+                        val_str = "n/a";
+                    } else {
+                        val_str = ""+value+m.getUnits();
+                    }
+                }
+
+                String val_link = "<a href='/graph/graph.html?ofc=/chart_data/"+m.getId()+"'>" + val_str + "</a>";
+
+                out.println("<tr><td><a href='#' onclick='hide_all_popups(); popup_details(\""+m.getId()+"\");'>" +
+                        "<img src='/img/" +size+ "/" + status_code + ".png'/></a></td>" +
+                        "<td><a href='#' onclick='hide_all_popups(); popup_details(\""+m.getId()+"\");'><b>" + m.getName() + "</b></a></td>" +
+                        "<td>" + val_link + "</td>" +
+                        "<td><a href='/history/"+m.getId()+"'>" + msg + "</a></td></tr>\n");
+                
+                String prop_str = Utils.flattenProperties(m.getProperties());
+
+                out.println("\n<div id='"+m.getId()+"' class='mondetails_hidden' onclick='popup_details(\""+m.getId()+"\")'>" +
+                        "<h3 style='margin-top:1px'>"+m.getName()+"</h3>" +
+                        "<b>Status: </b>"+Result.statusName(status_code)+"<br>" +
+                        "<b>Value: </b>"+val_str+"<br>" +
+                        "<b>Message: </b>"+Utils.stringToHTMLString(msg)+"<br>" +
+                        "<b>Type: </b>"+m.getType()+"<br>" +
+                        "<b>Last Run: </b>"+m.getLastRun()+"<br>" +
+                        "<b>Next Run: </b>"+m.getNextRun()+"<br>" +
+                        "<b>Properties: </b><span class='prop_list'>"+prop_str+"</span><br>" +
+                        "</div>\n");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            Main.log.error(e);
+        }
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+        out.println("\n</table><div class='time'> Updated: "+sdf.format(new Date())+" <a href='javascript:window.location.reload()'><img src='/img/reload.png'/></a></div>");
+    }*/
+
+    /**
+     *
+     * @param response
+     * @param mon_name
+     */
+    /*private void chartData(HttpServletResponse response, int mon_id)
+    {
+        try {
+            Monitor m = Main.runner.getMonitorById(mon_id);
+            String unit = m.getUnits();
+            SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+
+            Chart chart = new Chart(m.getName());
+            chart.setBackgroundColour("#eeeeee");
+            LineChart line_chart = new LineChart();
+            line_chart.setColour("#176c1e");
+            line_chart.setWidth(3);
+            XAxis xa = new XAxis();
+            xa.setGridColour("#e8e8e8");
+            xa.setColour("#0000aa");
+
+            XAxisLabels xal = new XAxisLabels();
+            xal.setRotation(Label.Rotation.VERTICAL);
+            xal.setSteps(2);
+            xa.setXAxisLabels(xal);
+
+            if(m.getResults().size() <= 0) {
+                chart.setTitle(new Text("No result for monitor"));
+                xa.addLabels("");
+            }
+
+            for(Result r : m.getResults()) {
+                double val = r.value;
+                String tooltip = ""+val;
+                if(Double.isNaN(r.value)) {
+                    val = 0.0;
+                    tooltip = r.msg;
+                } else {
+                    tooltip = val + " " + unit;
+                }
+
+                Dot dot = new Dot(val, r.statusColour(), 4, 1);
+
+                dot.setTooltip(tooltip);
+                line_chart.addDots(dot);
+                xa.addLabels(sdf.format(r.dt));
+            }
+
+            chart.addElements(line_chart);
+            chart.computeYAxisRange(10);
+            chart.getYAxis().setMin(0);
+            
+            // this insane gobbledy-gook calculates the best max & and step for the y-axis
+            double max_a = m.getResultsMax();
+            if(max_a == 0.0) max_a = 1.0;
+            int step = (int)Math.round((max_a / 100) * 10);
+            int rounding_size = 10;
+            if(max_a > 1000)
+                rounding_size = 100;
+            if(max_a > 10000)
+                rounding_size = 1000;
+            step += (rounding_size / 2);
+            step /= rounding_size;
+            step *= rounding_size;
+            chart.getYAxis().setMax(max_a);
+            chart.getYAxis().setSteps(step);
+
+            chart.getYAxis().setColour("#0000aa");
+            chart.getYAxis().setGridColour("#e8e8e8");
+            chart.setXAxis(xa);     
+            if(unit != null)
+                chart.setYLegend(new Text(unit, Text.createStyle(11)));
+
+            //phew! output the chart
+            response.getWriter().print(chart);
+
+        } catch (Exception ex) {
+            //ex.printStackTrace();
+            Main.log.error("Error rendering graph "+ex);
+        }
+    }*/
+
+    /**
+     *
+     * @param wr
+     * @param mon_name
+     */
+/*    private void pageHistory(PrintWriter out, int mon_id)
+    {
+        Monitor m = Main.runner.getMonitorById(mon_id);
+
+        out.println("<div style='margin:8px'><h4 style='text-align:center'>" +
+                " <a href='javascript:history.back()'>History for:"+m.getName()+"</a></h4>");
+        try {
+            SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss dd-MM-yyyy");
+
+            synchronized(this) {
+                Vector<Result> results = m.getResults();
+
+                double avg_val = 0.0;
+                double tot_val = 0.0;
+                int val_count = 0;
+                int good_count = 0;
+                int warn_count = 0;
+                int error_count = 0;
+                for(Result r : results) {
+                    if(r.status == Result.STATUS_GOOD) good_count++;
+                    if(r.status == Result.STATUS_WARN) warn_count++;
+                    if(r.status == Result.STATUS_ERROR) error_count++;
+                    if(Double.isNaN(r.value)) continue;
+                    tot_val += r.value;
+                    val_count++;
+                }
+                avg_val = tot_val / val_count;
+                if(Double.isNaN(avg_val))
+                    avg_val = 0.0;
+                
+                out.println("<table align='center'>");
+                java.text.DecimalFormat df = new java.text.DecimalFormat("#.##");
+                out.println("<tr style='padding:0px'><td>Average:</td><td>"+df.format(avg_val)+m.getUnits()+"</td>");
+                out.println("<td>Min:</td><td>"+m.getResultsMin()+m.getUnits()+"</td>");
+                out.println("<td>Max:</td><td>"+m.getResultsMax()+m.getUnits()+"</td></tr>");
+                out.println("<tr><td>Good:</td><td>"+(int)((good_count/(float)results.size())*100)+"%</td>");
+                out.println("<td>Warning:</td><td>"+(int)((warn_count/(float)results.size())*100)+"%</td>");
+                out.println("<td>Error:</td><td>"+(int)((error_count/(float)results.size())*100)+"%</td></tr>");
+                out.println("</table><table align='center'>");
+
+                for(int ri = results.size()-1; ri >= 0; ri--) {
+                    Result r = results.get(ri);
+                    out.println("<tr style='color: black; background-color:"+r.statusColour()+"'>" +
+                            "<td style='padding:2px'>"+sdf.format(r.dt)+"</td>" +
+                            "<td style='padding:2px; font-weight:bold;'>"+r.statusName()+"</td>" +
+                            "<td style='padding:2px; '>"+r.value+m.getUnits()+"</td>" +
+                            "<td style='padding:2px'>"+Utils.stringToHTMLString(r.msg)+"</td></tr>");
+                }
+            }
+        } catch (Exception e) {
+            //e.printStackTrace();
+            Main.log.error(e);
+        }
+        out.println("</table></div>");
+    }*/
+
+    /**
+     *
+     * @param wr
+     */
+    /*private void pageDebug(PrintWriter out)
+    {
+
+        out.println("<div style='padding:20px;'><h2 style='margin-top:0px'>Ziz - Admin &amp Debug</h2>\n");
+        out.println("<h3>Admin Actions</h3>\n" +
+                "<a href='/'><img src='/img/undo.png'/ style='vertical-align:middle'> Return</a><br/>" +
+                "<a href='#' onclick='warnReload()'><img src='/img/revert.png'/  style='vertical-align:middle'> Reload monitor config</a><br/>" +
+                "<a href='/debug?action=edit'><img src='/img/edit.png'/ style='vertical-align:middle'> Edit monitor config</a>" +
+                "<h3>Monitor Actions</h3><table border=1 cellpadding=0 cellspacing=0>\n");
+        for(Monitor m : Main.runner.getRootMonitors()) {
+            out.println("<tr><td><b>"+m+"</b></td><td><a href='/debug?action=force&monitor="+m.getId()+"'>" +
+                    "<img src='/img/reload.png' title='Force monitor to run now'/></a></td><td><a href='/debug?action=alert&monitor="+m.getId()+"'>" +
+                    "<img src='/img/alarm.png' title='Force fake alert'/></a></td>" +
+                    "<td style='font-size:0.8em'>"+Utils.flattenProperties(m.getProperties())+"</td>" +
+                    "</tr>\n");
+        }
+        for(Group g : Main.runner.getGroups()) {
+            out.write("<tr><td colspan='4'><b>["+g.getName()+"]</b></td></tr>\n");
+            for(Monitor m : g.getMonitors()) {
+                out.println("<tr><td><b> &bull; "+m+"</b></td><td><a href='/debug?action=force&monitor="+m.getId()+"'>" +
+                        "<img src='/img/reload.png' title='Force monitor to run now...'/></a></td>");
+                out.println("<td><a href='/debug?action=alert&monitor="+m.getId()+"'><img src='/img/alarm.png' " +
+                        "title='Force fake alert...'/></a></td>" +
+                        "<td style='font-size:0.8em'>"+Utils.flattenProperties(m.getProperties())+"</td>" +
+                        "</tr>\n");
+            }
+
+        }
+        out.println("</table><br/><br/><b>Version:</b> "+Main.VERSION+"<br/>");
+        out.println("<b>Monitors:</b> "+Main.runner.getMonitors().size()+"<br/>");
+        out.println("<b>Groups:</b> "+Main.runner.getGroups().size()+"<br/>");
+        int threads = java.lang.management.ManagementFactory.getThreadMXBean().getThreadCount();
+        long heap = java.lang.management.ManagementFactory.getMemoryMXBean().getHeapMemoryUsage().getUsed() / 10242;
+        long non_heap = java.lang.management.ManagementFactory.getMemoryMXBean().getNonHeapMemoryUsage().getUsed() / 10242;
+        out.println("<b>Memory:</b> Heap="+heap+"Mb / Non-Heap="+non_heap+"Mb<br/>");
+        out.println("<b>Threads:</b> "+threads+"<br/>");
+    }*/
+
+    /*private void pageReport(PrintWriter out)
+    {
+        out.println("<html><head><title>Generate Monitor Report</title>\n" +
+                "<link href='/css/epoch_styles.css' rel='stylesheet' type='text/css'>\n" +
+                "<script src='/js/epoch_classes.js' type='text/javascript'></script\n>" +
+                " <!--Epoch's Code-->\n<link rel='stylesheet' type='text/css' href='/css/epoch_styles.css' />\n<script type='text/javascript' src='/js/epoch_classes.js'></script>\n" +
+                "</head><body style='background-color:#232323;font-family: Arial;'>\n\n<p align='center'>");
+
+        out.println("<script> window.onload = function() { \n" +
+                "dp_cal  = new Epoch('epoch_popup','popup',document.getElementById('start_pop'));\n" +
+                "dp_cal_2  = new Epoch('epoch_popup','popup',document.getElementById('end_pop'));\n" +
+                "d = new Date();" +
+                "if(document.getElementById('start_pop').value.length <= 0)" +
+                "   document.getElementById('start_pop').value = d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();" +
+                "if(document.getElementById('end_pop').value.length <= 0)" +
+                "   document.getElementById('end_pop').value = d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();" +
+                "}\n" +
+                "validate = function() {\n" +
+                "if(document.getElementById('start_pop').value.length <= 0) { alert('Please choose a start date'); return; }\n" +
+                "if(document.getElementById('end_pop').value.length <= 0) { alert('Please choose a end date'); return; }\n" +
+                "document.forms[0].submit();\n" +
+                "}\n" +
+
+                "</script>");
+
+        String options = "";
+        File data_dir = new File("data/");
+        try {
+            for(File sub_dir : data_dir.listFiles()) {
+                if(!sub_dir.isDirectory()) continue;
+                options += "<option value='"+sub_dir.getName()+"'>"+sub_dir.getName()+"</option>";    
+            }
+        } catch(Exception ioe) {
+            System.out.println(ioe.getMessage());
+        }
+
+        out.println("<h2 style='color:white' align='center'>Generate Report</h2> " +
+                "<form id='placeholder' method='get' action='show_report'>" +
+                "<table style='color:white' align='center'>" +
+                "<tr><td align='right'><b>Monitor: </td><td><select name='monitor'/>"+options+"</select></td></tr>" +
+                "<tr><td align='right'><b>Start Date: </td><td><input id='start_pop' type='text' name='start'/></td></tr>" +
+                "<tr><td align='right'><b>End Date: </td><td><input id='end_pop' type='text' name='end'/></td></tr>" +
+                "<tr><td align='right'><b>Data Points: </td><td><select name='max' value='80'/><option>10</option><option>20</option><option>30</option><option>50</option><option selected='true'>80</option><option>100</option><option>150</option></select></td></tr>" +
+                "<tr><td align='right'><b>Zero x-axis: </td><td><input type='checkbox' name='zero'></td></tr>" +
+                "<tr><td align='right'><b>Show Dates: </td><td><input type='checkbox' name='dates'></td></tr>" +
+                "<tr><td></td><td><br><input style='font-size:1.5em' type='button' value='Generate' onclick='validate()'/></td></tr>" +
+                "</table>" +
+                "</form> " +
+                "</p></body></html>");
+    }*/
+
+    /*private void pageEdit(PrintWriter out)
+    {
+        try {
+            BufferedReader in = new BufferedReader(new FileReader(Main.CONF_DIR+Main.MONITOR_FILE));
+            String str;
+            String mon_conf_data = "";
+            while ((str = in.readLine()) != null) {
+                if(str.trim().equalsIgnoreCase("<monitors>")) continue;
+                if(str.trim().equalsIgnoreCase("</monitors>")) continue;
+                if(str.trim().equalsIgnoreCase("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")) continue;
+
+                mon_conf_data += str + "\n";
+            }
+            out.println("<div style='padding:20px;'><h2 style='margin-top:0px'>Ziz - Monitor Config Editor</h2>\n" +
+                    "<button type='button' onclick='insertGroupShow()'><img src='/img/folder.png'/> Group</button>" +
+                    "<button type='button' onclick='insertMonitorShow()'><img src='/img/mon.png'/> Monitor</button>" +
+                    "<button type='button' onclick='insertServerShow()'><img src='/img/pda.png'/> Server</button>" +
+                    "<button type='button' onclick='insertPropShow()'><img src='/img/prop.png'/> Property</button>" +
+                    "<textarea id='code' cols='90' rows='60'>"+mon_conf_data+"</textarea>\n\n" +
+                    "<form action='/debug' method='POST' onsubmit='return false;'>" +
+                    "");
+            out.println("<br/><button type='button' onclick='save()'><img src='/img/save.png'/> Save</button>");
+            out.println("<button type='button' onclick='saveAndReload()'><img src='/img/save_reload.png'/> Save &amp Reload</button>");
+            out.println("<button type='button' onclick='document.location.href=\"/debug\"'><img src='/img/button_cancel.png'/> Cancel / Exit</button>");
+            out.println("<input type='hidden' name='action' value=''/>");
+            out.println("<input type='hidden' name='xml' value=''/>");
+            out.println("<form/>\n");
+            out.println("<script type='text/javascript'>" +
+                    "  var editor = CodeMirror.fromTextArea('code', {" +
+                    "    height: '500px', parserfile: 'parsexml.js', stylesheet: '/css/codemirror/xmlcolors.css', path: '/js/codemirror/', indentUnit:3" +
+                    "  });" +
+                    "</script>\n\n");
+            out.println("<div id='group_div' class='dialog_hidden'>" +
+                    "Name: <input type='text' id='group_name' size='20'/><br/><br/>" +
+                    "<button type='button' onclick='insertGroup()' style=''>Insert Group</button>" +
+                    "<button type='button' onclick='insertGroupShow()' style=''>Cancel</button>" +
+                    "</div>\n\n");
+            out.println("<div id='mon_div' class='dialog_hidden'>" +
+                    "Name: <input type='text' id='mon_name' style='width:170px'/><br/>" +
+                    "Type: <select id='mon_type' style='width:170px'>");
+            for(File f : new File(Monitor.MON_PATH).listFiles()) {
+                if(f.getName().toLowerCase().endsWith(".js")) {
+                     out.println("<option>"+(f.getName().substring(0, f.getName().length()-3))+"</option>");
+                }
+            }
+            out.println("</select><br/>");
+            out.println("Interval: <select id='mon_int' style='width:170px'>" +
+                    "<option value='1'>1 minute</option>" +
+                    "<option value='5'>5 minutes</option>" +
+                    "<option value='10'>10 minutes</option>" +
+                    "<option value='15'>15 minutes</option>" +
+                    "<option value='30'>30 minutes</option>" +
+                    "<option value='45'>45 minutes</option>" +
+                    "<option value='60'>1 hour</option>" +
+                    "</select>");
+            out.println("<button type='button' onclick='insertMonitor()' style=''>Insert Monitor</button>" +
+                    "<button type='button' onclick='insertMonitorShow()' style=''>Cancel</button>" +
+                    "</div>\n\n");
+
+            out.println("<div id='prop_div' class='dialog_hidden'>" +
+                    "Name: <input type='text' id='prop_name' size='20'/><br/>" +
+                    "Value: <input type='text' id='prop_value' size='20'/><br/><br/>" +
+                    "<button type='button' onclick='insertProp()' style=''>Insert Property</button>" +
+                    "<button type='button' onclick='insertPropShow()' style=''>Cancel</button>" +
+                    "</div>\n\n");
+
+            out.println("<div id='server_div' class='dialog_hidden'>" +
+                    "Name: <input type='text' id='server_name' size='20'/><br/>" +
+                    "Hostname: <input type='text' id='server_host' size='20'/><br/>" +
+                    "Username: <input type='text' id='server_user' size='20'/><br/>" +
+                    "Password: <input type='password' id='server_pass' size='20'/><br/><br/>" +
+                    "<button type='button' onclick='insertServer()' style=''>Insert Server</button>" +
+                    "<button type='button' onclick='insertServerShow()' style=''>Cancel</button>" +
+                    "</div>\n\n");
+            
+            out.println("</div>");
+        } catch(IOException ioe) {
+
+        }
+
+    }*/
+}

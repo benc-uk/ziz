@@ -1,0 +1,18 @@
+06:44:03 29-10-2013	INFO	Main	
+06:44:03 29-10-2013	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+06:44:03 29-10-2013	INFO	Main	Ziz is starting up!
+06:44:03 29-10-2013	INFO	MonitorRunner	Checking monitors.xml config file for changes
+06:44:03 29-10-2013	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+06:44:04 29-10-2013	INFO	MonitorRunner	Created new monitor: reddit (http) in group <root>
+06:44:04 29-10-2013	INFO	MonitorRunner	Created new monitor: facebook (http) in group <root>
+06:44:05 29-10-2013	INFO	WebServer	Starting webserver, listening on port 7777
+06:44:20 29-10-2013	DEBUG	MonitorRunner	Running monitor: reddit (http)
+06:44:21 29-10-2013	DEBUG	Monitor	Monitor run complete: reddit result=10, 930.0, HTTP 200 OK (110 Kb)
+06:44:23 29-10-2013	DEBUG	MonitorRunner	Running monitor: facebook (http)
+06:44:23 29-10-2013	DEBUG	Monitor	Monitor run complete: facebook result=0, NaN, HTTP 301 Moved Permanently
+06:48:05 29-10-2013	INFO	MonitorRunner	Checking monitors.xml config file for changes
+06:48:05 29-10-2013	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+06:48:05 29-10-2013	INFO	MonitorRunner	Created new monitor: Nexus 5 16GB (http) in group <root>
+06:48:07 29-10-2013	DEBUG	MonitorRunner	Running monitor: Nexus 5 16GB (http)
+06:48:09 29-10-2013	DEBUG	Monitor	Monitor run complete: Nexus 5 16GB result=0, NaN, HTTP 404 Not Found
+06:49:04 29-10-2013	INFO	MonitorRunner	Checking monitors.xml config file for changes

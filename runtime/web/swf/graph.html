@@ -1,0 +1,32 @@
+<html> 
+<head> 
+<meta http-equiv='refresh' content='15'/>
+<LINK href='../css/main.css' rel='stylesheet' type='text/css'>
+<script src="../js/swfobject.js" language="javascript"    type="text/javascript"></script>
+<title>Ziz - Monitor Graph</title>
+<style>
+object#monitor_chart { display:inline; text-align:center }
+</style>
+</head> 
+<body style="padding-top:5px"> 
+
+<p align='center'>
+<a href='javascript:history.back()' style='color:grey'>Return to Monitor Dashboard</a><br/>
+
+<table>
+<tr><td align="center"><div id="monitor_chart">
+You need Adobe Flash to display this graph, please 
+<a href="http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash">
+click here to download it</a>
+</div></td></tr>
+</table>
+</p>
+
+<script type="text/javascript">
+swfobject.embedSWF(
+  "open-flash-chart.swf", "monitor_chart", "500", "320",
+  "9.0.0", "expressInstall.swf");
+</script> 
+
+</body> 
+</html>

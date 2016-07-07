@@ -1,0 +1,976 @@
+11:46:21 14-02-2012	INFO	Main	
+11:46:21 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+11:46:21 14-02-2012	INFO	Main	Ziz is starting up!
+11:46:21 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+11:46:21 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+11:46:21 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+11:46:21 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+11:46:21 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+11:46:21 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+11:46:35 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+11:46:37 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.6, 50% of packets timed out
+11:46:53 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+11:46:55 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 190.67, 10% of packets timed out
+11:47:06 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+11:47:07 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 151.3, Ping OK, 100% packets good
+11:47:33 14-02-2012	INFO	Main	
+11:47:33 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+11:47:33 14-02-2012	INFO	Main	Ziz is starting up!
+11:47:33 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+11:47:33 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+11:47:33 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+11:47:33 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+11:47:33 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+11:47:33 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+11:47:35 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+11:47:37 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 179.4, Ping OK, 100% packets good
+11:48:35 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+11:48:36 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.71, 30% of packets timed out
+11:48:53 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+11:48:55 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 189.0, 10% of packets timed out
+11:49:06 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+11:49:07 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.8, Ping OK, 100% packets good
+11:50:35 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+11:50:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 5.33, 70% of packets timed out
+11:50:53 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+11:50:55 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 183.38, 20% of packets timed out
+11:51:06 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+11:51:07 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 146.7, Ping OK, 100% packets good
+11:51:21 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+11:52:35 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+11:52:37 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 13.0, 40% of packets timed out
+11:52:57 14-02-2012	INFO	Main	
+11:52:57 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+11:52:57 14-02-2012	INFO	Main	Ziz is starting up!
+11:52:57 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+11:52:57 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+11:52:57 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+11:52:57 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+11:52:57 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+11:52:57 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+11:53:34 14-02-2012	INFO	Main	
+11:53:34 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+11:53:34 14-02-2012	INFO	Main	Ziz is starting up!
+11:53:34 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+11:53:34 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+11:53:34 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+11:53:34 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+11:53:34 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+11:53:34 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+11:53:40 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+11:53:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 196.8, 50% of packets timed out
+11:54:48 14-02-2012	INFO	Main	
+11:54:48 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+11:54:48 14-02-2012	INFO	Main	Ziz is starting up!
+11:54:48 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+11:54:48 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+11:54:48 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+11:54:48 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+11:54:48 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+11:54:48 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+11:55:07 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+11:55:09 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.7, Ping OK, 100% packets good
+11:55:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+11:55:59 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 12.2, 50% of packets timed out
+11:56:06 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+11:56:08 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 187.2, Ping OK, 100% packets good
+11:57:07 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+11:57:08 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+11:58:59 14-02-2012	INFO	Main	
+11:58:59 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+11:58:59 14-02-2012	INFO	Main	Ziz is starting up!
+11:58:59 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+11:58:59 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+11:58:59 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+11:58:59 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+11:58:59 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+11:58:59 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+11:59:13 14-02-2012	INFO	Main	
+11:59:13 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+11:59:13 14-02-2012	INFO	Main	Ziz is starting up!
+11:59:13 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+11:59:13 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+11:59:13 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+11:59:13 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+11:59:13 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+11:59:13 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+11:59:55 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+11:59:57 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 188.8, Ping OK, 100% packets good
+12:00:37 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:00:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.71, 30% of packets timed out
+12:00:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:00:58 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.7, Ping OK, 100% packets good
+12:01:55 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:01:57 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 188.8, Ping OK, 100% packets good
+12:02:37 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:02:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.57, 30% of packets timed out
+12:02:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:02:58 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 146.6, Ping OK, 100% packets good
+12:03:18 14-02-2012	INFO	Main	
+12:03:18 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:03:18 14-02-2012	INFO	Main	Ziz is starting up!
+12:03:18 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:03:18 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:03:18 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:03:18 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:03:18 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:03:18 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:03:29 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:03:31 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 31.0, 30% of packets timed out
+12:03:54 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:03:55 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.1, Ping OK, 100% packets good
+12:04:38 14-02-2012	INFO	Main	
+12:04:38 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:04:38 14-02-2012	INFO	Main	Ziz is starting up!
+12:04:38 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:04:38 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:04:38 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:04:38 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:04:38 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:04:38 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:14:41 14-02-2012	INFO	Main	
+12:14:41 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:14:41 14-02-2012	INFO	Main	Ziz is starting up!
+12:14:41 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:14:41 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:14:41 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:14:41 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:14:41 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:14:41 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:15:27 14-02-2012	INFO	Main	
+12:15:27 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:15:27 14-02-2012	INFO	Main	Ziz is starting up!
+12:15:27 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:15:27 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:15:27 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:15:27 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:15:27 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:15:27 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:17:03 14-02-2012	INFO	Main	
+12:17:03 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:17:03 14-02-2012	INFO	Main	Ziz is starting up!
+12:17:03 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:17:03 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:17:03 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:17:03 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:17:03 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:17:03 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:18:25 14-02-2012	INFO	Main	
+12:18:25 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:18:25 14-02-2012	INFO	Main	Ziz is starting up!
+12:18:25 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:18:25 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:18:25 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:18:25 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:18:25 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:18:25 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:18:47 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:18:51 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.33, 70% of packets timed out
+12:19:03 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:19:05 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 151.3, Ping OK, 100% packets good
+12:20:48 14-02-2012	INFO	Main	
+12:20:48 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:20:48 14-02-2012	INFO	Main	Ziz is starting up!
+12:20:48 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:20:48 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:20:48 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:20:48 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:20:48 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:20:48 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:21:52 14-02-2012	INFO	Main	
+12:21:52 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:21:52 14-02-2012	INFO	Main	Ziz is starting up!
+12:21:52 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:21:52 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:21:52 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:21:52 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:21:52 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:21:52 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:21:53 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:21:55 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.7, Ping OK, 100% packets good
+12:22:31 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:22:34 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 12.6, 50% of packets timed out
+12:23:40 14-02-2012	INFO	Main	
+12:23:40 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:23:40 14-02-2012	INFO	Main	Ziz is starting up!
+12:23:40 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:23:40 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:23:40 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:23:40 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:23:40 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:23:40 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:23:45 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:23:47 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 13.0, 40% of packets timed out
+12:24:12 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:24:13 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.7, Ping OK, 100% packets good
+12:24:44 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:24:46 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 183.78, 10% of packets timed out
+12:25:34 14-02-2012	INFO	Main	
+12:25:34 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:25:34 14-02-2012	INFO	Main	Ziz is starting up!
+12:25:34 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:25:34 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:25:34 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:25:34 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:25:34 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:25:34 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:26:10 14-02-2012	INFO	Main	
+12:26:10 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:26:10 14-02-2012	INFO	Main	Ziz is starting up!
+12:26:10 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:26:10 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:26:10 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:26:10 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:26:10 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:26:10 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:26:32 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:26:34 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 183.78, 10% of packets timed out
+12:26:48 14-02-2012	INFO	Main	
+12:26:48 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:26:48 14-02-2012	INFO	Main	Ziz is starting up!
+12:26:48 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:26:48 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:26:48 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:26:48 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:26:48 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:26:48 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:26:58 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:27:00 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 196.6, Ping OK, 100% packets good
+12:27:07 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:27:08 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.8, Ping OK, 100% packets good
+12:27:36 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:27:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.5, 40% of packets timed out
+12:28:22 14-02-2012	INFO	Main	
+12:28:22 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:28:22 14-02-2012	INFO	Main	Ziz is starting up!
+12:28:22 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:28:22 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:28:22 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:28:22 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:28:22 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:28:22 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:28:24 14-02-2012	ERROR	GraphPage	Error rendering graph java.lang.NullPointerException
+12:28:59 14-02-2012	INFO	Main	
+12:28:59 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:28:59 14-02-2012	INFO	Main	Ziz is starting up!
+12:28:59 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:28:59 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:28:59 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:28:59 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:28:59 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:28:59 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:29:23 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:29:26 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 187.14, 30% of packets timed out
+12:29:39 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:29:40 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.3, Ping OK, 100% packets good
+12:29:48 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:29:50 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 13.0, 40% of packets timed out
+12:30:25 14-02-2012	INFO	Main	
+12:30:25 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:30:25 14-02-2012	INFO	Main	Ziz is starting up!
+12:30:25 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:30:25 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:30:25 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:30:25 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:30:25 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:30:25 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:30:28 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:30:30 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 188.9, Ping OK, 100% packets good
+12:31:19 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:31:20 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.1, Ping OK, 100% packets good
+12:32:00 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:32:02 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.4, 50% of packets timed out
+12:32:52 14-02-2012	INFO	Main	
+12:32:52 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:32:52 14-02-2012	INFO	Main	Ziz is starting up!
+12:32:52 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:32:52 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:32:53 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:32:53 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:32:53 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:32:53 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:33:24 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:33:26 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.5, 40% of packets timed out
+12:33:31 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:33:32 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+12:34:53 14-02-2012	INFO	Main	
+12:34:53 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:34:53 14-02-2012	INFO	Main	Ziz is starting up!
+12:34:53 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:34:53 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:34:53 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:34:53 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:34:53 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:34:53 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:35:29 14-02-2012	INFO	Main	
+12:35:29 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:35:29 14-02-2012	INFO	Main	Ziz is starting up!
+12:35:29 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:35:29 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:35:29 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:35:29 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:35:29 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:35:29 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:37:00 14-02-2012	INFO	Main	
+12:37:00 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:37:00 14-02-2012	INFO	Main	Ziz is starting up!
+12:37:00 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:37:00 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:37:00 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:37:00 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:37:00 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:37:00 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:37:35 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:37:37 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+12:38:15 14-02-2012	INFO	Main	
+12:38:15 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:38:15 14-02-2012	INFO	Main	Ziz is starting up!
+12:38:15 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:38:15 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:38:15 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:38:15 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:38:15 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:38:16 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:38:44 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:38:47 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.5, 40% of packets timed out
+12:38:55 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:39:36 14-02-2012	INFO	Main	
+12:39:36 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:39:36 14-02-2012	INFO	Main	Ziz is starting up!
+12:39:36 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:39:36 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:39:36 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:39:36 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:39:36 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:39:36 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:42:59 14-02-2012	INFO	Main	
+12:42:59 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:42:59 14-02-2012	INFO	Main	Ziz is starting up!
+12:42:59 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:42:59 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:42:59 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:42:59 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:42:59 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:42:59 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:43:12 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:43:13 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 11.62, 20% of packets timed out
+12:43:40 14-02-2012	INFO	Main	
+12:43:40 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:43:40 14-02-2012	INFO	Main	Ziz is starting up!
+12:43:40 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:43:40 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:43:41 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:43:41 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:43:41 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:43:41 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:43:43 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:43:45 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 190.56, 10% of packets timed out
+12:44:13 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:44:14 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 146.7, Ping OK, 100% packets good
+12:44:52 14-02-2012	INFO	Main	
+12:44:52 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:44:52 14-02-2012	INFO	Main	Ziz is starting up!
+12:44:52 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:44:52 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:44:52 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:44:52 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:44:52 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:44:52 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:45:20 14-02-2012	INFO	Main	
+12:45:20 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+12:45:20 14-02-2012	INFO	Main	Ziz is starting up!
+12:45:20 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:45:20 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:45:20 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:45:20 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:45:20 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:45:20 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+12:45:21 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:45:21 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 12.11, 10% of packets timed out
+12:45:53 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:45:55 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 182.6, Ping OK, 100% packets good
+12:46:04 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:46:05 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 152.8, Ping OK, 100% packets good
+12:46:21 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:46:23 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.5, 40% of packets timed out
+12:46:53 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:46:55 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 195.0, 20% of packets timed out
+12:47:04 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:47:05 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:47:05 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+12:47:05 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+12:47:05 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+12:47:05 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+12:47:05 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 152.8, Ping OK, 100% packets good
+12:47:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:47:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:47:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.8, Ping OK, 100% packets good
+12:47:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 12.2, 50% of packets timed out
+12:47:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:47:43 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 187.3, Ping OK, 100% packets good
+12:48:25 14-02-2012	DEBUG	WebReport	Tried to read input data file data\twitter\2012-02-13.dat but it wasn't found, this is not a problem
+12:48:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:48:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:48:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.7, Ping OK, 100% packets good
+12:48:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 13.17, 40% of packets timed out
+12:48:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:48:45 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 187.14, 30% of packets timed out
+12:49:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:49:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:49:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.1, Ping OK, 100% packets good
+12:49:40 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.5, 60% of packets timed out
+12:49:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:49:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 183.78, 10% of packets timed out
+12:50:20 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:50:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:50:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:50:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 151.3, Ping OK, 100% packets good
+12:50:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.5, 40% of packets timed out
+12:50:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:50:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 193.12, 20% of packets timed out
+12:51:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:51:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:51:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+12:51:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.67, 40% of packets timed out
+12:51:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:51:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 187.11, 10% of packets timed out
+12:52:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:52:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:52:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+12:52:35 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.67, 10% of packets timed out
+12:52:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:52:45 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 187.14, 30% of packets timed out
+12:53:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:53:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:53:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+12:53:40 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 16.0, 60% of packets timed out
+12:53:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:53:46 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 195.17, 40% of packets timed out
+12:54:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:54:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:54:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+12:54:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.4, 50% of packets timed out
+12:54:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:54:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 189.0, 10% of packets timed out
+12:55:20 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+12:55:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:55:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:55:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 146.7, Ping OK, 100% packets good
+12:55:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.5, 40% of packets timed out
+12:55:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:55:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 188.89, 10% of packets timed out
+12:56:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:56:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:56:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+12:56:37 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.71, 30% of packets timed out
+12:56:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:56:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 183.78, 10% of packets timed out
+12:57:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:57:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:57:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+12:57:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.83, 40% of packets timed out
+12:57:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:57:45 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 196.0, 30% of packets timed out
+12:58:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:58:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:58:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+12:58:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 16.0, 50% of packets timed out
+12:58:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:58:46 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 195.0, 40% of packets timed out
+12:59:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+12:59:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+12:59:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+12:59:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 9.0, 50% of packets timed out
+12:59:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+12:59:49 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 197.33, 70% of packets timed out
+13:00:20 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+13:00:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:00:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:00:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.8, Ping OK, 100% packets good
+13:00:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:00:42 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 8.0, 80% of packets timed out
+13:00:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 190.67, 10% of packets timed out
+13:01:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:01:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:01:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.7, Ping OK, 100% packets good
+13:01:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.5, 40% of packets timed out
+13:01:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:01:43 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 187.1, Ping OK, 100% packets good
+13:02:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:02:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:02:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+13:02:40 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 19.25, 60% of packets timed out
+13:02:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:02:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 189.12, 20% of packets timed out
+13:03:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:03:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:03:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.8, Ping OK, 100% packets good
+13:03:40 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.25, 60% of packets timed out
+13:03:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:03:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 187.25, 20% of packets timed out
+13:04:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:04:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:04:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 146.7, Ping OK, 100% packets good
+13:04:36 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.62, 20% of packets timed out
+13:04:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:04:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 192.44, 10% of packets timed out
+13:05:20 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+13:05:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:05:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:05:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.8, Ping OK, 100% packets good
+13:05:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.67, 40% of packets timed out
+13:05:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:05:48 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 195.25, 60% of packets timed out
+13:06:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:06:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:06:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+13:06:36 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 17.62, 20% of packets timed out
+13:06:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:06:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 189.0, 10% of packets timed out
+13:07:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:07:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:07:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.8, Ping OK, 100% packets good
+13:07:40 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 12.0, 60% of packets timed out
+13:07:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:07:43 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 188.8, Ping OK, 100% packets good
+13:08:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:08:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:08:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+13:08:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:08:42 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 16.0, 80% of packets timed out
+13:08:43 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 184.1, Ping OK, 100% packets good
+13:09:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:09:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:09:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.8, Ping OK, 100% packets good
+13:09:36 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 17.5, 20% of packets timed out
+13:09:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:09:43 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 188.7, Ping OK, 100% packets good
+13:10:20 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+13:10:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:10:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:10:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+13:10:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.6, 50% of packets timed out
+13:10:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:10:43 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 190.3, Ping OK, 100% packets good
+13:11:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:11:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:11:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+13:11:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.83, 40% of packets timed out
+13:11:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:11:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 182.0, 10% of packets timed out
+13:12:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:12:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:12:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+13:12:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:12:41 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.0, 70% of packets timed out
+13:12:48 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 191.0, 60% of packets timed out
+13:13:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:13:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:13:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 151.3, Ping OK, 100% packets good
+13:13:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 93.6, 50% of packets timed out
+13:13:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:13:43 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 187.1, Ping OK, 100% packets good
+13:14:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:14:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:14:34 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.1, Ping OK, 100% packets good
+13:14:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.5, 40% of packets timed out
+13:14:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:14:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 188.78, 10% of packets timed out
+13:15:20 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+13:15:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:15:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:15:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.1, Ping OK, 100% packets good
+13:15:40 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 11.75, 60% of packets timed out
+13:15:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:15:45 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 196.14, 30% of packets timed out
+13:16:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:16:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:16:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.8, Ping OK, 100% packets good
+13:16:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.83, 40% of packets timed out
+13:16:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:16:47 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 187.2, 50% of packets timed out
+13:17:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:17:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:17:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+13:17:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.83, 40% of packets timed out
+13:17:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:17:43 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 181.0, Ping OK, 100% packets good
+13:18:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:18:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:18:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+13:18:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.6, 50% of packets timed out
+13:18:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:18:47 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 196.6, 50% of packets timed out
+13:19:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:19:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:19:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.7, Ping OK, 100% packets good
+13:19:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 6.2, 50% of packets timed out
+13:19:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:19:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 188.89, 10% of packets timed out
+13:20:20 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+13:20:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:20:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:20:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+13:20:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.8, 50% of packets timed out
+13:20:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:20:45 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 196.88, 20% of packets timed out
+13:21:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:21:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:21:36 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=5, 240.89, 10% of packets timed out
+13:21:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 12.83, 40% of packets timed out
+13:21:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:21:45 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 181.38, 20% of packets timed out
+13:22:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:22:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:22:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 146.8, Ping OK, 100% packets good
+13:22:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.8, 50% of packets timed out
+13:22:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:22:45 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 183.38, 20% of packets timed out
+13:23:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:23:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:23:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.8, Ping OK, 100% packets good
+13:23:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.4, 50% of packets timed out
+13:23:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:23:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 190.78, 10% of packets timed out
+13:24:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:24:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:24:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 153.0, Ping OK, 100% packets good
+13:24:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:24:41 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 21.0, 70% of packets timed out
+13:24:43 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 191.9, Ping OK, 100% packets good
+13:25:20 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+13:25:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:25:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:25:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 146.6, Ping OK, 100% packets good
+13:25:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.67, 40% of packets timed out
+13:25:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:25:46 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 192.5, 40% of packets timed out
+13:26:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:26:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:26:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 146.6, Ping OK, 100% packets good
+13:26:37 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.71, 30% of packets timed out
+13:26:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:26:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 183.78, 10% of packets timed out
+13:27:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:27:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:27:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+13:27:37 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.71, 30% of packets timed out
+13:27:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:27:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 183.67, 10% of packets timed out
+13:28:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:28:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:28:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.8, Ping OK, 100% packets good
+13:28:37 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.57, 30% of packets timed out
+13:28:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:28:44 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 192.44, 10% of packets timed out
+13:29:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:29:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:29:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.1, Ping OK, 100% packets good
+13:29:38 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 10.5, 40% of packets timed out
+13:29:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:29:46 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 198.29, 30% of packets timed out
+13:30:20 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+13:30:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:30:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:30:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 146.6, Ping OK, 100% packets good
+13:30:36 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 17.5, 20% of packets timed out
+13:30:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:30:45 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 183.38, 20% of packets timed out
+13:31:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:31:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:31:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+13:31:37 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.57, 30% of packets timed out
+13:31:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:31:50 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 195.0, 80% of packets timed out
+13:32:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:32:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:32:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.8, Ping OK, 100% packets good
+13:32:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 12.4, 50% of packets timed out
+13:32:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:32:48 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 195.0, 60% of packets timed out
+13:33:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:33:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:33:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+13:33:36 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.75, 20% of packets timed out
+13:33:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:33:45 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 189.0, 20% of packets timed out
+13:34:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:34:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:34:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.7, Ping OK, 100% packets good
+13:34:37 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 11.75, 20% of packets timed out
+13:34:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:34:43 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 181.0, Ping OK, 100% packets good
+13:35:20 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+13:35:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:35:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:35:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 149.8, Ping OK, 100% packets good
+13:35:40 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.5, 60% of packets timed out
+13:35:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:35:43 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 188.8, Ping OK, 100% packets good
+13:36:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:36:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:36:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+13:36:40 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.6, 50% of packets timed out
+13:36:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:36:47 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 193.6, 50% of packets timed out
+13:37:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:37:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:37:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 151.3, Ping OK, 100% packets good
+13:37:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 23.5, 40% of packets timed out
+13:37:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:37:46 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 198.43, 30% of packets timed out
+13:38:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+13:38:34 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+13:38:35 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 148.2, Ping OK, 100% packets good
+13:38:39 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.5, 40% of packets timed out
+13:38:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+13:38:47 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 199.6, 50% of packets timed out
+15:18:36 14-02-2012	INFO	Main	
+15:18:36 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+15:18:36 14-02-2012	INFO	Main	Ziz is starting up!
+15:18:36 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+15:18:36 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+15:18:37 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+15:18:37 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+15:18:37 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+15:18:37 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+15:18:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:18:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 156.0, Ping OK, 100% packets good
+15:19:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:19:16 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 182.5, Ping OK, 100% packets good
+15:19:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:19:22 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 9.4, 50% of packets timed out
+15:19:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:19:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 154.5, Ping OK, 100% packets good
+15:20:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:20:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:20:21 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 199.0, 60% of packets timed out
+15:20:22 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 12.6, 50% of packets timed out
+15:20:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:20:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 156.0, Ping OK, 100% packets good
+15:21:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:21:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:21:20 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 192.67, 40% of packets timed out
+15:21:23 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 16.0, 60% of packets timed out
+15:21:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:21:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 153.0, Ping OK, 100% packets good
+15:22:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:22:17 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 188.8, Ping OK, 100% packets good
+15:22:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:22:24 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 16.0, 70% of packets timed out
+15:22:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:22:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 159.1, Ping OK, 100% packets good
+15:23:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:23:16 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 185.7, Ping OK, 100% packets good
+15:23:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:23:20 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.71, 30% of packets timed out
+15:23:37 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+15:23:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:23:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 154.4, Ping OK, 100% packets good
+15:24:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:24:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:24:17 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 183.78, 10% of packets timed out
+15:24:25 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.5, 80% of packets timed out
+15:24:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:24:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 153.0, Ping OK, 100% packets good
+15:25:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:25:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:25:17 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 190.56, 10% of packets timed out
+15:25:23 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.75, 60% of packets timed out
+15:25:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:25:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 154.5, Ping OK, 100% packets good
+15:26:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:26:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:26:18 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 195.12, 20% of packets timed out
+15:26:22 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 25.0, 50% of packets timed out
+15:26:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:26:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 152.8, Ping OK, 100% packets good
+15:27:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:27:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:27:20 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 197.67, 40% of packets timed out
+15:27:21 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 16.0, 40% of packets timed out
+15:27:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:27:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 153.0, Ping OK, 100% packets good
+15:28:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:28:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:28:18 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 189.12, 20% of packets timed out
+15:28:20 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.43, 30% of packets timed out
+15:28:37 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+15:28:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:28:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 154.5, Ping OK, 100% packets good
+15:29:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:29:17 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 188.7, Ping OK, 100% packets good
+15:29:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:29:22 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 12.6, 50% of packets timed out
+15:29:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:29:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 152.8, Ping OK, 100% packets good
+15:30:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:30:17 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 188.7, Ping OK, 100% packets good
+15:30:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:30:22 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.8, 50% of packets timed out
+15:30:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:30:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 156.0, Ping OK, 100% packets good
+15:31:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:31:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:31:20 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 11.29, 30% of packets timed out
+15:31:20 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 195.0, 40% of packets timed out
+15:31:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:31:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 156.0, Ping OK, 100% packets good
+15:32:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:32:17 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 190.3, Ping OK, 100% packets good
+15:32:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:32:24 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.67, 70% of packets timed out
+15:32:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:32:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 154.4, Ping OK, 100% packets good
+15:33:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:33:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:33:18 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 193.25, 20% of packets timed out
+15:33:19 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.88, 20% of packets timed out
+15:33:37 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+15:33:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:33:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 153.0, Ping OK, 100% packets good
+15:34:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:34:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:34:18 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 195.0, 20% of packets timed out
+15:34:22 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 19.2, 50% of packets timed out
+15:34:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:34:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 154.5, Ping OK, 100% packets good
+15:35:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:35:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:35:18 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 185.25, 20% of packets timed out
+15:35:22 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 12.4, 50% of packets timed out
+15:35:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:35:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 156.0, Ping OK, 100% packets good
+15:36:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:36:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:36:19 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 189.29, 30% of packets timed out
+15:36:20 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.43, 30% of packets timed out
+15:36:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:36:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 154.4, Ping OK, 100% packets good
+15:37:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:37:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:37:17 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 194.9, Ping OK, 100% packets good
+15:37:22 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 21.8, 50% of packets timed out
+15:37:56 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+15:37:57 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 154.4, Ping OK, 100% packets good
+15:38:15 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+15:38:17 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+15:38:18 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 187.11, 10% of packets timed out
+15:38:23 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.75, 60% of packets timed out
+15:38:37 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+17:55:38 14-02-2012	INFO	Main	
+17:55:38 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+17:55:38 14-02-2012	INFO	Main	Ziz is starting up!
+17:55:38 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+17:55:38 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+17:55:38 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+17:55:38 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+17:55:38 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+17:55:38 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+17:55:48 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+17:55:50 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 153.0, Ping OK, 100% packets good
+17:56:19 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+17:56:22 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 13.43, 30% of packets timed out
+17:56:31 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+17:56:31 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+17:56:31 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+17:56:31 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+17:56:31 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+17:56:31 14-02-2012	INFO	MonitorRunner	Created new monitor: wikipedia (ping) in group <root>
+17:56:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+17:56:37 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 189.0, 20% of packets timed out
+17:56:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+17:56:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: wikipedia (ping)
+17:56:43 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 151.3, Ping OK, 100% packets good
+17:56:48 14-02-2012	DEBUG	Monitor	Monitor run complete: wikipedia result=5, 121.0, 60% of packets timed out
+17:57:27 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+17:57:31 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.83, 40% of packets timed out
+17:57:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+17:57:37 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 191.12, 20% of packets timed out
+17:57:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+17:57:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: wikipedia (ping)
+17:57:43 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 151.3, Ping OK, 100% packets good
+17:57:44 14-02-2012	DEBUG	Monitor	Monitor run complete: wikipedia result=5, 121.0, 20% of packets timed out
+17:58:27 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+17:58:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+17:58:34 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 10.33, 70% of packets timed out
+17:58:37 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 193.0, 20% of packets timed out
+17:58:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+17:58:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: wikipedia (ping)
+17:58:43 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 168.6, Ping OK, 100% packets good
+17:58:49 14-02-2012	DEBUG	Monitor	Monitor run complete: wikipedia result=5, 133.0, 80% of packets timed out
+17:59:27 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+17:59:32 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 12.2, 50% of packets timed out
+17:59:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+17:59:37 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 191.0, 20% of packets timed out
+17:59:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+17:59:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: wikipedia (ping)
+17:59:43 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 152.9, Ping OK, 100% packets good
+17:59:47 14-02-2012	DEBUG	Monitor	Monitor run complete: wikipedia result=5, 115.4, 50% of packets timed out
+18:00:27 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+18:00:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+18:00:33 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.75, 60% of packets timed out
+18:00:37 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 191.12, 20% of packets timed out
+18:00:38 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+18:00:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+18:00:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: wikipedia (ping)
+18:00:43 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 154.4, Ping OK, 100% packets good
+18:00:45 14-02-2012	DEBUG	Monitor	Monitor run complete: wikipedia result=5, 122.43, 30% of packets timed out
+18:01:27 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+18:01:32 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 12.2, 50% of packets timed out
+18:01:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+18:01:37 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 185.25, 20% of packets timed out
+18:01:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+18:01:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: wikipedia (ping)
+18:01:43 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 152.8, Ping OK, 100% packets good
+18:01:48 14-02-2012	DEBUG	Monitor	Monitor run complete: wikipedia result=5, 128.75, 60% of packets timed out
+18:02:27 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+18:02:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+18:02:34 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 10.33, 70% of packets timed out
+18:02:38 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 193.86, 30% of packets timed out
+18:02:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+18:02:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: wikipedia (ping)
+18:02:43 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 151.3, Ping OK, 100% packets good
+18:02:49 14-02-2012	DEBUG	Monitor	Monitor run complete: wikipedia result=5, 125.0, 70% of packets timed out
+18:03:27 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+18:03:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+18:03:33 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 16.0, 60% of packets timed out
+18:03:36 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 183.67, 10% of packets timed out
+18:03:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+18:03:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: wikipedia (ping)
+18:03:43 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 154.4, Ping OK, 100% packets good
+18:03:46 14-02-2012	DEBUG	Monitor	Monitor run complete: wikipedia result=5, 125.0, 40% of packets timed out
+18:04:27 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+18:04:32 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 9.2, 50% of packets timed out
+18:04:33 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+18:04:36 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 189.0, 10% of packets timed out
+18:04:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+18:04:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: wikipedia (ping)
+18:04:43 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 152.8, Ping OK, 100% packets good
+18:04:45 14-02-2012	DEBUG	Monitor	Monitor run complete: wikipedia result=5, 122.57, 30% of packets timed out
+21:44:26 14-02-2012	INFO	Main	
+21:44:26 14-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+21:44:26 14-02-2012	INFO	Main	Ziz is starting up!
+21:44:26 14-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+21:44:26 14-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+21:44:26 14-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+21:44:26 14-02-2012	INFO	MonitorRunner	Created new monitor: facebook (ping) in group <root>
+21:44:26 14-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+21:44:26 14-02-2012	INFO	MonitorRunner	Created new monitor: wikipedia (ping) in group <root>
+21:44:26 14-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+21:44:38 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+21:44:40 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 163.9, Ping OK, 100% packets good
+21:44:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+21:44:43 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 182.5, Ping OK, 100% packets good
+21:45:09 14-02-2012	DEBUG	MonitorRunner	Running monitor: wikipedia (ping)
+21:45:10 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+21:45:16 14-02-2012	DEBUG	Monitor	Monitor run complete: wikipedia result=5, 124.5, 60% of packets timed out
+21:45:16 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.75, 60% of packets timed out
+21:45:38 14-02-2012	DEBUG	MonitorRunner	Running monitor: facebook (ping)
+21:45:40 14-02-2012	DEBUG	Monitor	Monitor run complete: facebook result=10, 165.4, Ping OK, 100% packets good
+21:45:41 14-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+21:45:45 14-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=5, 187.25, 20% of packets timed out
+21:46:09 14-02-2012	DEBUG	MonitorRunner	Running monitor: wikipedia (ping)
+21:46:10 14-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+21:46:14 14-02-2012	DEBUG	Monitor	Monitor run complete: wikipedia result=5, 124.67, 40% of packets timed out
+21:46:16 14-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.75, 60% of packets timed out

@@ -1,0 +1,30 @@
+<?XML version="1.0" standalone="yes" ?>
+<job id="WMI">
+	<script language="VBScript" src="inc/library.vbs"/>
+	<script language="VBScript"><![CDATA[
+		Init()
+
+		' This perfmon stuff needs a refresher (yum!)
+		Set Refresher = CreateObject("WbemScripting.Swbemrefresher")
+		
+		Set counter_set = Refresher.AddEnum(WMIService, "Win32_PerfFormattedData_PerfOS_Processor").objectSet	
+
+		' Initial refresh of the data...
+		Refresher.Refresh
+		WScript.Sleep 2000
+		Refresher.Refresh
+			
+		' Main data collection loop
+		For Each instance In counter_set
+			If instance.Name = "_Total" Then
+				cpu = instance.PercentProcessorTime
+			End If	 	
+		Next
+		Set Refresher = Nothing 
+		Set counter_set = Nothing 
+		Set WMIService = Nothing 
+		
+		OutputResult STATUS_GOOD, cpu, "CPU status OK"
+
+	]]></script>
+</job>

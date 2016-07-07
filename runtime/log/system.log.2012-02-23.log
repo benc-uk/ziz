@@ -1,0 +1,37 @@
+21:46:07 23-02-2012	INFO	Main	
+21:46:07 23-02-2012	INFO	Main	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+21:46:07 23-02-2012	INFO	Main	Ziz is starting up!
+21:46:07 23-02-2012	INFO	MonitorRunner	Checking monitors.xml config file for changes
+21:46:07 23-02-2012	INFO	MonitorRunner	monitors.xml has been updated, reloading all monitors
+21:46:07 23-02-2012	INFO	MonitorRunner	Created new monitor: twitter (ping) in group <root>
+21:46:07 23-02-2012	INFO	MonitorRunner	Created new monitor: csp (ping) in group <root>
+21:46:07 23-02-2012	INFO	MonitorRunner	Created new monitor: wikipedia (ping) in group <root>
+21:46:07 23-02-2012	INFO	MonitorRunner	Created new monitor: ffg (ping) in group <root>
+21:46:08 23-02-2012	INFO	WebServer	Starting webserver, listening on port 7777
+21:46:17 23-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+21:46:19 23-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+21:46:20 23-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 188.8, Ping OK, 100% packets good
+21:46:24 23-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 15.67, 40% of packets timed out
+21:46:24 23-02-2012	DEBUG	MonitorRunner	Running monitor: wikipedia (ping)
+21:46:31 23-02-2012	DEBUG	Monitor	Monitor run complete: wikipedia result=5, 125.0, 60% of packets timed out
+21:46:40 23-02-2012	DEBUG	MonitorRunner	Running monitor: ffg (ping)
+21:46:42 23-02-2012	DEBUG	Monitor	Monitor run complete: ffg result=10, 134.1, Ping OK, 100% packets good
+21:47:17 23-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+21:47:19 23-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 187.2, Ping OK, 100% packets good
+21:47:19 23-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+21:47:24 23-02-2012	DEBUG	MonitorRunner	Running monitor: wikipedia (ping)
+21:47:26 23-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 19.25, 60% of packets timed out
+21:47:27 23-02-2012	DEBUG	Monitor	Monitor run complete: wikipedia result=5, 124.88, 20% of packets timed out
+21:47:40 23-02-2012	DEBUG	MonitorRunner	Running monitor: ffg (ping)
+21:47:42 23-02-2012	DEBUG	Monitor	Monitor run complete: ffg result=10, 132.7, Ping OK, 100% packets good
+21:48:17 23-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+21:48:19 23-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 187.2, Ping OK, 100% packets good
+21:48:19 23-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)
+21:48:24 23-02-2012	DEBUG	MonitorRunner	Running monitor: wikipedia (ping)
+21:48:25 23-02-2012	DEBUG	Monitor	Monitor run complete: csp result=5, 12.4, 50% of packets timed out
+21:48:28 23-02-2012	DEBUG	Monitor	Monitor run complete: wikipedia result=5, 124.86, 30% of packets timed out
+21:48:40 23-02-2012	DEBUG	MonitorRunner	Running monitor: ffg (ping)
+21:48:42 23-02-2012	DEBUG	Monitor	Monitor run complete: ffg result=10, 134.2, Ping OK, 100% packets good
+21:49:17 23-02-2012	DEBUG	MonitorRunner	Running monitor: twitter (ping)
+21:49:19 23-02-2012	DEBUG	Monitor	Monitor run complete: twitter result=10, 188.8, Ping OK, 100% packets good
+21:49:19 23-02-2012	DEBUG	MonitorRunner	Running monitor: csp (ping)

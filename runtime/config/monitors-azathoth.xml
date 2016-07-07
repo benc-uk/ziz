@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monitors>
+	<group name='Azathoth'>
+		<monitor name="CPU" type="snmp-cpu" interval="2">
+			<hostname>azathoth</hostname>
+			<password>xMcLqA9ee5I=</password>
+			<warning_threshold>80</warning_threshold>
+			<error_threshold>90</error_threshold>
+		</monitor>
+			<monitor name="Memory" type="snmp-memory" interval="2">
+			<hostname>azathoth</hostname>
+			<password>xMcLqA9ee5I=</password>
+			<warning_threshold>490</warning_threshold>
+			<error_threshold>500</error_threshold>
+			<mem_type>physical</mem_type>
+		</monitor>
+			<monitor name="Apache" type="snmp-process" interval="2">
+			<hostname>azathoth</hostname>
+			<password>xMcLqA9ee5I=</password>
+			<warning_threshold>490</warning_threshold>
+			<error_threshold>500</error_threshold>
+			<process>httpd</process>
+		</monitor>   
+			<monitor name="MySQL" type="snmp-process" interval="2">
+			<hostname>azathoth</hostname>
+			<password>xMcLqA9ee5I=</password>
+			<warning_threshold>490</warning_threshold>
+			<error_threshold>500</error_threshold>
+			<process>mysql</process>
+		</monitor> 
+		<monitor name="Net IO Input" type="ssh-command" interval="1">
+			<hostname>azathoth</hostname>
+			<username>root</username>
+			<password>eqWf2gTzLM4=</password>
+			<command>ifconfig eth0</command>
+			<regex>RX\sbytes:(\d+)\s</regex>
+			<match>1</match>
+			<div>125000</div>
+			<do_delta>true</do_delta>
+		</monitor>
+		<monitor name="Net IO Output" type="ssh-command" interval="1">
+			<hostname>azathoth</hostname>
+			<username>root</username>
+			<password>eqWf2gTzLM4=</password>
+			<command>ifconfig eth0</command>
+			<regex>TX\sbytes:(\d+)\s</regex>
+			<match>1</match>
+			<div>125000</div>
+			<do_delta>true</do_delta>
+		</monitor> 		
+	</group>
+</monitors>

@@ -1,0 +1,5 @@
+C:\Dev\Visual Studio 2008\Projects\ZizCollector\ZizCollector\bin\Debug\ZizCollector.exe
+C:\Dev\Visual Studio 2008\Projects\ZizCollector\ZizCollector\bin\Debug\ZizCollector.pdb
+C:\Dev\Visual Studio 2008\Projects\ZizCollector\ZizCollector\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\Visual Studio 2008\Projects\ZizCollector\ZizCollector\obj\Debug\ZizCollector.exe
+C:\Dev\Visual Studio 2008\Projects\ZizCollector\ZizCollector\obj\Debug\ZizCollector.pdb

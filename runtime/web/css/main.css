@@ -1,0 +1,91 @@
+body {
+	font-family: Arial;
+	background-color: #232323;
+	color: white;
+}
+td  {
+    /*padding: 10px;*/
+}
+a {
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+a img {
+    border: none;
+	vertical-align: middle;
+}
+h2 {
+	border-bottom: 2px solid grey;
+}
+.mondetails_shown {
+        visibility: visible;
+        display: block;
+		position: absolute;
+		width: 400px;
+		max-width: 400px;
+		min-width: 400px;		
+		margin-left: auto;
+		margin-right: auto;
+        border: 3px outset #999999;
+        background-color: white;
+        color: black;
+        font-size: 0.9em;
+		padding: 3px;
+}
+.mondetails_shown h3 {
+	border-bottom: 2px solid black;
+	margin-top: 2px;
+	margin-bottom: 4px;
+	padding-top: 2px;
+	margin-top: 0px;
+}
+.mondetails_hidden {
+        visibility: hidden;
+        display: none;
+}
+.time {
+	font-size: 0.8em;
+	float: right;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	font-style: italic;
+	color: #aaaaaa;
+	background-color: #232323;
+	padding-bottom: 2px;
+}
+.prop_list {
+    	font-size: 0.75em;
+}
+
+.dialog_shown {
+        visibility: visible;
+        display: block;
+        position: absolute;
+        top: 150px;
+        left: 20%;
+        width: 250px;
+        margin: 5px;
+        padding: 3px;
+        border: 4px outset #888888;
+        background-color: #9fb4d9;
+        color: black;
+        font-size: 0.9em;
+        padding: 5px;
+		z-index: 100;
+		max-width: 400px;
+		text-align: center;
+}
+.dialog_hidden {
+        visibility: hidden;
+        display: none;
+}
+
+button {
+	height:35px;
+	font-size:1.2em; 
+}
+button img {
+vertical-align:middle;
+}

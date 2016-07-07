@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT monitors (monitor | group | server)*>
+<!ELEMENT monitor ANY>
+<!ELEMENT group (monitor)+>
+<!ELEMENT server (#PCDATA)>
+
+<!ATTLIST monitor name CDATA #REQUIRED>
+<!ATTLIST monitor type CDATA #REQUIRED>
+<!ATTLIST monitor interval CDATA #REQUIRED>
+
+<!ATTLIST group name CDATA #REQUIRED>

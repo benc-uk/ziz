@@ -1,0 +1,10 @@
+C:\Dev\Visual Studio 2008\Projects\WinCollector\WinCollector\bin\Release\ZizCollector.exe
+C:\Dev\Visual Studio 2008\Projects\WinCollector\WinCollector\bin\Release\ZizCollector.pdb
+C:\Dev\Visual Studio 2008\Projects\WinCollector\WinCollector\obj\Release\ResolveAssemblyReference.cache
+C:\Dev\Visual Studio 2008\Projects\WinCollector\WinCollector\obj\Release\ZizCollector.exe
+C:\Dev\Visual Studio 2008\Projects\WinCollector\WinCollector\obj\Release\ZizCollector.pdb
+C:\Dev\Visual Studio 2008\Projects\ZizCollector\ZizCollector\obj\Release\ZizCollector.exe
+C:\Dev\Visual Studio 2008\Projects\ZizCollector\ZizCollector\obj\Release\ZizCollector.pdb
+C:\Dev\Visual Studio 2008\Projects\ZizCollector\ZizCollector\bin\Release\ZizCollector.exe
+C:\Dev\Visual Studio 2008\Projects\ZizCollector\ZizCollector\bin\Release\ZizCollector.pdb
+C:\Dev\Visual Studio 2008\Projects\ZizCollector\ZizCollector\obj\Release\ResolveAssemblyReference.cache

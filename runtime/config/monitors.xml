@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monitors>
+
+    <monitor name="Nexus 5 16GB" type="http" interval="5">
+        <url>https://play.google.com/store/devices/details?id=nexus_5_black_16gb</url>
+        <timeout>20000</timeout>
+    </monitor>
+
+</monitors>
